@@ -1,0 +1,38 @@
+.result-offset {
+  padding-top: 10px;
+}
+
+.search-section {
+  background: #fff;
+  transition: box-shadow 0.2s;
+}
+
+/* 스크롤로 헤더에 닿으면 떠서 고정 */
+.search-fixed {
+  position: fixed;
+  top: var(--header-height, 79px); /* 실제 헤더 높이에 맞게 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;          /* 또는 max-width: 90% */
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+
+/* Collapse 전체 여백/테두리 제거 예시 */
+.ant-collapse {
+  background: transparent;
+  border: none;
+}
+.ant-collapse > .ant-collapse-item {
+  border-bottom: none;
+}
+
+.blankContainer {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

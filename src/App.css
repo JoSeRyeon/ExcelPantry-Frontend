@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+/* ------------------------ */
+
+.success {
+  color: #1677ff;
+}
+
+.fail {
+  color: red;
+}
+
+.fail-highlight {
+  background-color: #ffc7ce;
+}
+
+.check-title {
+  font-size: large;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.check-container{
+  padding : 5px
+}
+
+

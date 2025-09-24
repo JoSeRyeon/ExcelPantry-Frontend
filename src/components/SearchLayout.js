@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Layout, Menu } from "antd";
 import { Outlet, Link, useLocation } from "react-router-dom";
-import { HomeOutlined, SettingOutlined, UploadOutlined, SearchOutlined } from "@ant-design/icons";
+import { UploadOutlined, SearchOutlined } from "@ant-design/icons";
 
 const { Sider, Content } = Layout;
 

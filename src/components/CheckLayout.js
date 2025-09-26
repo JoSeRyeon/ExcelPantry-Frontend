@@ -6,7 +6,8 @@ import { DatabaseOutlined, CheckCircleOutlined, UploadOutlined } from "@ant-desi
 const { Sider, Content } = Layout;
 
 export default function CheckLayout() {
-  const [collapsed, setCollapsed] = useState(false);
+  // ✅ 처음 로딩 시 화면 폭이 768px 이하라면 닫힌 상태로 시작
+  const [collapsed, setCollapsed] = useState(() => window.innerWidth <= 768);
   const siderWidth = collapsed ? 80 : 200;
   const headerHeight = 70;
   const { pathname } = useLocation();

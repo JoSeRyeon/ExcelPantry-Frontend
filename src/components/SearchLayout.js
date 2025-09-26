@@ -6,12 +6,13 @@ import { UploadOutlined, SearchOutlined } from "@ant-design/icons";
 const { Sider, Content } = Layout;
 
 export default function SearchLayout() {
-  const [collapsed, setCollapsed] = useState(false);
+  // ✅ 처음 로딩 시 화면 폭이 768px 이하라면 닫힌 상태로 시작
+  const [collapsed, setCollapsed] = useState(() => window.innerWidth <= 768);
   const siderWidth = collapsed ? 80 : 200;
   const headerHeight = 70;
   const { pathname } = useLocation();
 
-  const items = [    
+  const items = [
     { key: "/search/excel", icon: <SearchOutlined />, label: <Link to="excel">Search</Link> },
     { key: "/search/upload", icon: <UploadOutlined />, label: <Link to="upload">Upload</Link> },
   ];
@@ -36,7 +37,7 @@ export default function SearchLayout() {
       >
         <Menu
           mode="inline"
-          style={{padding : "20px 3px"}}
+          style={{ padding: "20px 3px" }}
           selectedKeys={[pathname]}
           items={items}
         />

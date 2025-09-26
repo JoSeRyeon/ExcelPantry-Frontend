@@ -170,7 +170,7 @@ export default function CheckUpload() {
   };
 
   return (
-    <div style={{ padding: 24 }}>
+    <div className="check-upload-wrapper">
       <Row gutter={[24, 24]}>
         {categories.map(({ key, title }) => (
           <Col key={key} xs={24} md={8}>

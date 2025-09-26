@@ -1,8 +1,9 @@
 import { Card, Button, Tooltip } from 'antd';
 import React from 'react';
 
-export default function ResultCard({ data, headerInfo, onOpen }) {
-  const sheetHeader =
+// export default function ResultCard({ data, headerInfo, onOpen }) {
+export default function ResultCard({ data, headerInfo }) {
+const sheetHeader =
     headerInfo.find(
       (e) =>
         e.sheetInfo.fileName === data.file &&
@@ -19,9 +20,9 @@ export default function ResultCard({ data, headerInfo, onOpen }) {
     >
 
       <div>
-        <Button danger onClick={() => onOpen(data)}>
+        {/* <Button danger onClick={() => onOpen(data)}>
           OPEN FILE
-        </Button>
+        </Button> */}
         <div style={{ background: '#FEF2F4', marginTop: 6 }}>
           <b>시트명 :</b> {data.sheetName}
         </div>

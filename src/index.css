@@ -1,19 +1,5 @@
-
-/* NEW */
-/* 가로 스크롤 방지 */
-html, body {
-  /* margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; */
-}
-
-
 :root {
   /* 메인 포인트 색상 */
-  /* --color-primary: #6f4af6;
-  --color-primary-hover: #5a38d0; */
   --color-primary: #f65364;
   --color-primary-hover: #fd9ca9;
   
@@ -25,15 +11,12 @@ html, body {
   /* 배경 */
   --color-info-bg: rgba(255, 255, 255, 0.85);
   --color-tag-bg:  rgba(111, 74, 246, 0.1);
-  /* --color-tag-bg: rgba(30, 158, 130, 0.1); */
   --color-shadow:  rgba(0, 0, 0, 0.1);
 
     /* 버튼 그림자 */
   --color-shadow-primary: rgba(111, 74, 246, 0.25);
-  /* --color-shadow-primary: rgba(30, 158, 130, 0.1); */
 }
 
-/* NEW */
 .main-container {
   padding: 10px;
 }

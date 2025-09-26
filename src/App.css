@@ -18,6 +18,9 @@ body {
 
 /* ------------------------ */
 
+.check-card {
+  word-break: break-word;     /* 긴 문자열 자동 줄바꿈 */
+}
 .success {
   color: #1677ff;
 }
@@ -40,4 +43,13 @@ body {
   padding : 5px
 }
 
+/* CheckUpload.js file */
+.check-upload-wrapper {
+  padding: 24px;
+}
 
+@media (max-width: 768px) {
+  .check-upload-wrapper {
+    padding: 3px;
+  }
+}

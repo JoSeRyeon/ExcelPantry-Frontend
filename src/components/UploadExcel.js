@@ -53,7 +53,7 @@ export default function UploadExcel({ onListUpdate }) {
   };
 
   return (
-    <div style={{ minHeight: 200 }}>
+    <div style={{ minHeight: 200, textAlign: 'center' }}>
       <Upload.Dragger {...props} fileList={fileList} style={{ marginBottom: 16 }}>
         <p className="ant-upload-drag-icon"><InboxOutlined /></p>
         <p className="ant-upload-text">엑셀 파일을 선택하거나 드래그하세요</p>

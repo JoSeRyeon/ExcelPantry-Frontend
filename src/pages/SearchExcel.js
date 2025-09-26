@@ -160,9 +160,16 @@ export default function SearchExcel() {
           {/* 결과 */}
           <div className="result-offset">
             {results.length && headerInfo.length ? (
-              <Row gutter={16} style={{ marginTop: 20 }}>
+              <Row gutter={[16, 16]} style={{ marginTop: 20 }}>
                 {results.map((r, idx) => (
-                  <Col key={idx} span={4}>
+                  <Col
+                    key={idx}
+                    xs={24}  // <= 576px  → 1열
+                    sm={12}  // 576px~768px → 2열
+                    md={8}   // 768px~992px → 3열
+                    lg={6}   // 992px~1200px → 4열
+                    xl={6}   // >=1200px → 4열
+                  >
                     <ResultCard
                       data={r}
                       headerInfo={headerInfo}
@@ -171,6 +178,17 @@ export default function SearchExcel() {
                   </Col>
                 ))}
               </Row>
+              // <Row gutter={16} style={{ marginTop: 20 }}>
+              //   {results.map((r, idx) => (
+              //     <Col key={idx} span={4}>
+              //       <ResultCard
+              //         data={r}
+              //         headerInfo={headerInfo}
+              //         onOpen={openFile}
+              //       />
+              //     </Col>
+              //   ))}
+              // </Row>
             ) : !isLoading && <Empty className="blankContainer" description={false} />}
           </div>
         </div>

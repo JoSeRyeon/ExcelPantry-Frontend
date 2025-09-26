@@ -1,4 +1,5 @@
-import { Card, Button, Tooltip } from 'antd';
+// import { Card, Button, Tooltip } from 'antd';
+import { Card, Tooltip } from 'antd';
 import React from 'react';
 
 // export default function ResultCard({ data, headerInfo, onOpen }) {
